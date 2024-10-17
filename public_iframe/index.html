@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Uptime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header" style="display: none;">
+        <h2>Camera Uptime</h2>
+    </div>
+
+    <div class="controls">
+        <button onclick="changeLayout('1')">1 Column</button>
+        <button onclick="changeLayout('2')">2 Columns</button>
+        <button onclick="changeLayout('3')">3 Columns</button>
+    </div>
+
+    <div id="cameraContainer" class="container"></div>
+
+    <div class="camera-form">
+        <h3>เพิ่มกล้องใหม่</h3>
+        <input type="text" id="cameraName" placeholder="ชื่อกล้อง">
+        <input type="text" id="cameraUrl" placeholder="URL กล้อง">
+        <button onclick="addCamera()">เพิ่มกล้อง</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
