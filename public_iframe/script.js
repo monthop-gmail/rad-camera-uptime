@@ -13,9 +13,10 @@ function loadCameras() {
                 cameraElement.innerHTML = `
                     <h3>${camera.name}</h3>
                     <iframe src="${camera.url}" allowfullscreen></iframe>
-                    <button onclick="deleteCamera(${index})">ลบกล้อง</button>
                 `;
-                
+
+                // <button onclick="deleteCamera(${index})">ลบกล้อง</button>
+
                 container.appendChild(cameraElement);
             });
         })
